@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrimActivity">
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:id="@+id/croppingVideo"/>
+
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/croppingVideo"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/rangeBar"/>
+    <TextView
+        android:id="@+id/tvLeft"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rangeBar"
+        android:layout_below="@+id/rangeBar"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/rangeBar"
+        android:layout_alignRight="@+id/rangeBar"
+        android:layout_below="@+id/rangeBar"
+        android:textColor="#000000" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cutButton"
+        android:text="Crop"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@+id/rangeBar"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/addTrack"
+        android:text="Add Track"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/cutButton"/>
+
+</RelativeLayout>

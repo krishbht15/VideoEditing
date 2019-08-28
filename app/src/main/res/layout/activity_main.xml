@@ -31,14 +31,7 @@
         android:layout_centerHorizontal="true"
       android:id="@+id/capture1"
         android:layout_alignLeft="@id/firstVideo"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/capture1"
-        android:text="Cancel"
-android:id="@+id/cancel1"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_alignLeft="@id/capture1"/>
+
     <Button
         android:layout_below="@id/firstVideo"
         android:layout_width="wrap_content"
@@ -49,15 +42,7 @@ android:id="@+id/cancel1"
         android:layout_alignLeft="@id/secondVideo"
         android:layout_centerHorizontal="true"
         android:id="@+id/capture2"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/capture1"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:text="Cancel"
-        android:id="@+id/cancel2"
 
-        android:layout_alignLeft="@id/capture2"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -65,7 +50,7 @@ android:id="@+id/cancel1"
         android:text="Merge Videos"
         android:layout_centerHorizontal="true"
         android:id="@+id/playvideo"
-        android:layout_below="@id/cancel1"
+        android:layout_below="@id/capture1"
         android:layout_marginTop="50dp"
       />
 </RelativeLayout>

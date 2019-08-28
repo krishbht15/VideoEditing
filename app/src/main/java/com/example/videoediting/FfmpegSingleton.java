@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import com.github.hiteshsondhi88.libffmpeg.ExecuteBinaryResponseHandler;
 import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
@@ -44,6 +45,9 @@ public class FfmpegSingleton {
                     if (choice == 1) {
                         Toast.makeText(mContext, key + " Audio added ", Toast.LENGTH_SHORT).show();
                         SharedPreferenceImpl.getInstance().save(key, command[command.length - 1], mContext);
+                      VideoView v=((Activity) mContext).findViewById(R.id.videoVidew);
+                      v.setVideoURI(Uri.fromFile(new File(command[command.length - 1])));
+                      v.start();
 
                     }else if(choice==33){
                         Toast.makeText(mContext,  " Video Joined ", Toast.LENGTH_SHORT).show();

@@ -44,13 +44,5 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_below="@+id/rangeBar"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/addTrack"
-        android:text="Add Track"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_below="@+id/cutButton"/>
 
 </RelativeLayout>

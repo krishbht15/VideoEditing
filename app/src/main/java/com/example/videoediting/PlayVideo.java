@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.VideoView;
 
-import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -23,15 +22,7 @@ public class PlayVideo extends AppCompatActivity {
     private ArrayList<String> inputs;
     private static final String TAG = "PlayVideo";
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (audioAdded) {
-            audioAdded = false;
-            mVideo.setVideoURI(Uri.fromFile(new File(SharedPreferenceImpl.getInstance().get("audio", PlayVideo.this))));
-            mVideo.start();
-        }
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
